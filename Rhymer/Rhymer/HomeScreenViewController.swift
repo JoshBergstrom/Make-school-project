@@ -14,7 +14,7 @@ public var wordToSearch: String? = nil
 
 class ViewController: UIViewController {
     
-    var rhymedWords: [String] = []
+    var rhymedWords: [RhymingWord] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,17 +24,23 @@ class ViewController: UIViewController {
 }
 
 // In the @IBAction for the "Rhyme!" button, do the following code:
-
+//
 //let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
 //
 //Alamofire.request(apiToContact).validate().responseJSON() { response in
 //    switch response.result {
 //    case .success:
 //        if let value = response.result.value {
-//            let jsonData = try! Data(contentsOf: apiToContact)
-//            let wordsData = try! Data(contentsOf: apiToContact)
-//            let json = JSON(value)
-//            let rhymedWord = RhymingWord(json: json, wordIndex: rhymedWords.count)
+//            let searchURL = NSURL.fileURL(withPath: apiToContact)
+//            let jsonData = try! Data(contentsOf: searchURL)
+//            let wordsData = try! JSON(data: jsonData)
+//            let allWordsData = wordsData.arrayValue
+//            for word in allWordsData {
+//                let nextRhymedWord = RhymingWord(json: word, wordIndex: rhymedWords.count)
+//                rhymedWords.append(nextRhymedWord)
+//            }
+//
+//            //Set the correspomding UIElements to the attributes of RhymingWord()
 //            self.movieTitleLabel.text = movie.name
 //            self.rightsOwnerLabel.text = movie.rightsOwner
 //            self.releaseDateLabel.text = movie.releaseDate
