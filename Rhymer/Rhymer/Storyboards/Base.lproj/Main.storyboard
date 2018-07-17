@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Results Screen View Controller-->
         <scene sceneID="a9l-Pg-p3g">
             <objects>
-                <viewController id="pVF-Lb-d15" sceneMemberID="viewController">
+                <viewController id="pVF-Lb-d15" customClass="ResultsScreenViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FLy-nj-TUn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
