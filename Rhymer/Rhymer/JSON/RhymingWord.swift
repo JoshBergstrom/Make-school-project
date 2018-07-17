@@ -1,5 +1,5 @@
 //
-//  JSONParser.swift
+//  RhymingWord.swift
 //  Rhymer
 //
 //  Created by Arya Gharib on 7/16/18.
@@ -7,13 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct RhymingWord: Decodable {
+
+struct RhymingWord {
     let word: String
     let numOfSyllables: Int
     let usageScore: Int
     
-    init(json:) {
-        <#statements#>
+    init(json: JSON, wordIndex index: Int) {
+        self.word = json[index]["word"].stringValue
+        self.numOfSyllables = json[index]["numSyllables"].intValue
+        self.usageScore = json[index]["numSyllables"].intValue
     }
 }
