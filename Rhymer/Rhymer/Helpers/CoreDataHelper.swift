@@ -2,7 +2,7 @@
 //  CoreDataHelper.swift
 //  Rhymer
 //
-//  Created by Arya Gharib on 7/17/18.
+//  Created by Arya Gharib and Josh Bergstrom on 7/17/18.
 //  Copyright © 2018 Sina Gharib. All rights reserved.
 //
 
@@ -22,4 +22,32 @@ struct CoreDataHelper {
         return context
     }()
     
+    static func newWord() -> Word {
+        let word = NSEntityDescription.insertNewObject(forEntityName: "Word", into: context) as! Word
+        return word
+    }
+    //done from here to text comment
+    static func saveToFavorites() {
+        do {
+            try context.save()
+        } catch let error {
+            print("Could not save \(error.localizedDescription)")
+        }
+    }
+    
+    static func unFavorite(wordToDelete word: Word) {
+        context.delete(word)
+    }
+    
+    static func retrieveFavorites() -> [Word] {
+        do {
+            let fetchRequest = NSFetchRequest<Word>(entityName: "Word")
+            let results = try context.fetch(fetchRequest)
+            return results
+        } catch let error {
+            print(error)
+            return []
+        }
+    }
+    // end done section
 }
