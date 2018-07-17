@@ -74,8 +74,8 @@
 		4218320C20FD402900C28CBE /* Rhymer */ = {
 			isa = PBXGroup;
 			children = (
+				427D638E20FE62A600A1516A /* Models */,
 				420C824520FE548600AA337B /* Helpers */,
-				4218321F20FD408A00C28CBE /* JSON */,
 				4218320D20FD402900C28CBE /* AppDelegate.swift */,
 				4218320F20FD402900C28CBE /* HomeScreenViewController.swift */,
 				4218321120FD402900C28CBE /* Main.storyboard */,
@@ -86,12 +86,12 @@
 			path = Rhymer;
 			sourceTree = "<group>";
 		};
-		4218321F20FD408A00C28CBE /* JSON */ = {
+		427D638E20FE62A600A1516A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4218322120FD4C3100C28CBE /* RhymingWord.swift */,
 			);
-			path = JSON;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6303BBB34FE3E034C98D8642 /* Pods */ = {
