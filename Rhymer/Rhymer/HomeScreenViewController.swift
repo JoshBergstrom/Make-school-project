@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeScreenViewController.swift
 //  Rhymer
 //
 //  Created by Arya Gharib on 7/16/18.

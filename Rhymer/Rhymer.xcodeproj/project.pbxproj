@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420C824720FE54D900AA337B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C824620FE54D900AA337B /* CoreDataHelper.swift */; };
 		4218320E20FD402900C28CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218320D20FD402900C28CBE /* AppDelegate.swift */; };
-		4218321020FD402900C28CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218320F20FD402900C28CBE /* ViewController.swift */; };
+		4218321020FD402900C28CBE /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218320F20FD402900C28CBE /* HomeScreenViewController.swift */; };
 		4218321320FD402900C28CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4218321120FD402900C28CBE /* Main.storyboard */; };
 		4218321520FD402C00C28CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4218321420FD402C00C28CBE /* Assets.xcassets */; };
 		4218321820FD402C00C28CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4218321620FD402C00C28CBE /* LaunchScreen.storyboard */; };
@@ -18,9 +19,10 @@
 
 /* Begin PBXFileReference section */
 		41C859F7A7CE8F4F4069A911 /* Pods-Rhymer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rhymer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rhymer/Pods-Rhymer.debug.xcconfig"; sourceTree = "<group>"; };
+		420C824620FE54D900AA337B /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = Rhymer/Helpers/CoreDataHelper.swift; sourceTree = SOURCE_ROOT; };
 		4218320A20FD402900C28CBE /* Rhymer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rhymer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4218320D20FD402900C28CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4218320F20FD402900C28CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4218320F20FD402900C28CBE /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		4218321220FD402900C28CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4218321420FD402C00C28CBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4218321720FD402C00C28CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420C824520FE548600AA337B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				420C824620FE54D900AA337B /* CoreDataHelper.swift */,
+			);
+			name = Helpers;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4218320120FD402900C28CBE = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +74,10 @@
 		4218320C20FD402900C28CBE /* Rhymer */ = {
 			isa = PBXGroup;
 			children = (
+				420C824520FE548600AA337B /* Helpers */,
 				4218321F20FD408A00C28CBE /* JSON */,
 				4218320D20FD402900C28CBE /* AppDelegate.swift */,
-				4218320F20FD402900C28CBE /* ViewController.swift */,
+				4218320F20FD402900C28CBE /* HomeScreenViewController.swift */,
 				4218321120FD402900C28CBE /* Main.storyboard */,
 				4218321420FD402C00C28CBE /* Assets.xcassets */,
 				4218321620FD402C00C28CBE /* LaunchScreen.storyboard */,
@@ -213,8 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4218321020FD402900C28CBE /* ViewController.swift in Sources */,
+				4218321020FD402900C28CBE /* HomeScreenViewController.swift in Sources */,
 				4218320E20FD402900C28CBE /* AppDelegate.swift in Sources */,
+				420C824720FE54D900AA337B /* CoreDataHelper.swift in Sources */,
 				4218322220FD4C3100C28CBE /* RhymingWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
