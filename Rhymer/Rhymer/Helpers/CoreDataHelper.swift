@@ -22,4 +22,17 @@ struct CoreDataHelper {
         return context
     }()
     
+    static func newWord() -> Word {
+        let word = NSEntityDescription.insertNewObject(forEntityName: "Word", into: context) as! Word
+        return word
+    }
+    
+    static func saveToFavorites() {
+        do {
+            try context.save()
+        } catch let error {
+            print("Could not save \(error.localizedDescription)")
+        }
+    }
+    
 }
