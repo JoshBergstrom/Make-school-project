@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03084E0320FEB58E00B5CDB4 /* ResultsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084E0220FEB58E00B5CDB4 /* ResultsScreenViewController.swift */; };
 		420C824720FE54D900AA337B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C824620FE54D900AA337B /* CoreDataHelper.swift */; };
 		4218320E20FD402900C28CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218320D20FD402900C28CBE /* AppDelegate.swift */; };
 		4218321020FD402900C28CBE /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218320F20FD402900C28CBE /* HomeScreenViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03084E0220FEB58E00B5CDB4 /* ResultsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsScreenViewController.swift; sourceTree = "<group>"; };
 		41C859F7A7CE8F4F4069A911 /* Pods-Rhymer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rhymer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rhymer/Pods-Rhymer.debug.xcconfig"; sourceTree = "<group>"; };
 		420C824620FE54D900AA337B /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = Rhymer/Helpers/CoreDataHelper.swift; sourceTree = SOURCE_ROOT; };
 		4218320A20FD402900C28CBE /* Rhymer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rhymer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03084E0120FEB55500B5CDB4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4218320F20FD402900C28CBE /* HomeScreenViewController.swift */,
+				03084E0220FEB58E00B5CDB4 /* ResultsScreenViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		03084E0420FEB66F00B5CDB4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4218321620FD402C00C28CBE /* LaunchScreen.storyboard */,
+				4218321120FD402900C28CBE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		420C824520FE548600AA337B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,13 +96,12 @@
 		4218320C20FD402900C28CBE /* Rhymer */ = {
 			isa = PBXGroup;
 			children = (
+				03084E0420FEB66F00B5CDB4 /* Storyboards */,
+				03084E0120FEB55500B5CDB4 /* View Controllers */,
 				427D638E20FE62A600A1516A /* Models */,
 				420C824520FE548600AA337B /* Helpers */,
 				4218320D20FD402900C28CBE /* AppDelegate.swift */,
-				4218320F20FD402900C28CBE /* HomeScreenViewController.swift */,
-				4218321120FD402900C28CBE /* Main.storyboard */,
 				4218321420FD402C00C28CBE /* Assets.xcassets */,
-				4218321620FD402C00C28CBE /* LaunchScreen.storyboard */,
 				4218321920FD402C00C28CBE /* Info.plist */,
 			);
 			path = Rhymer;
@@ -234,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4218321020FD402900C28CBE /* HomeScreenViewController.swift in Sources */,
+				03084E0320FEB58E00B5CDB4 /* ResultsScreenViewController.swift in Sources */,
 				4218320E20FD402900C28CBE /* AppDelegate.swift in Sources */,
 				427D639520FE69E100A1516A /* Model.xcdatamodeld in Sources */,
 				420C824720FE54D900AA337B /* CoreDataHelper.swift in Sources */,
@@ -383,7 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2CL6FZA46J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Rhymer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,7 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2CL6FZA46J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Rhymer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

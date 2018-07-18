@@ -12,7 +12,7 @@ import Alamofire
 
 public var wordToSearch: String? = nil
 
-class ViewController: UIViewController {
+class HomeScreenViewController: UIViewController {
     
     var rhymedWords: [RhymingWord] = []
 
@@ -20,8 +20,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Constantly update the global variable "wordToSearch" here with the contents of the search bar
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
 }
+
+
 
 // In the @IBAction for the "Rhyme!" button, do the following code:
 //
