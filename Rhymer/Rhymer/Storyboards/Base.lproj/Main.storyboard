@@ -10,7 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+<<<<<<< HEAD
         <!--Item-->
+=======
+        <!--Home-->
+>>>>>>> master
         <scene sceneID="bgh-us-Vx7">
             <objects>
                 <viewController id="9FD-jg-nUj" customClass="HomeScreenViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,12 +69,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tHI-cj-Iyn"/>
                     </view>
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="Item" id="3F2-xD-bxa"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Home" id="3F2-xD-bxa"/>
+>>>>>>> master
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="yW9-CQ-fhf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWA-Ag-pdj" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="567" y="98"/>
+=======
+            <point key="canvasLocation" x="666" y="-448"/>
+>>>>>>> master
         </scene>
         <!--View Controller-->
         <scene sceneID="SEh-WE-PWv">
@@ -217,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khy-Vi-Ujh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.8" y="118.29085457271366"/>
+            <point key="canvasLocation" x="1454" y="-448"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SJU-mJ-KbO">
@@ -229,7 +241,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="9FD-jg-nUj" kind="relationship" relationship="viewControllers" id="0d5-Ks-hub"/>
+=======
+                        <segue destination="TDQ-LL-Laa" kind="relationship" relationship="viewControllers" id="bZo-Pa-7en"/>
+                        <segue destination="9FD-jg-nUj" kind="relationship" relationship="viewControllers" id="0d5-Ks-hub"/>
+                        <segue destination="DfQ-wL-heI" kind="relationship" relationship="viewControllers" id="gNV-Hy-L6z"/>
+>>>>>>> master
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59B-3X-Kc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,12 +295,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GbW-ue-ue6"/>
                     </view>
+<<<<<<< HEAD
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uO6-ht-BBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1456.8" y="778.56071964017997"/>
         </scene>
         <!--View Controller-->
+=======
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="VTp-6b-jK8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uO6-ht-BBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="224"/>
+        </scene>
+        <!--Notes-->
+>>>>>>> master
         <scene sceneID="Csy-R7-KiE">
             <objects>
                 <viewController id="DfQ-wL-heI" sceneMemberID="viewController">
@@ -313,10 +341,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LRi-0Y-scE"/>
                     </view>
+<<<<<<< HEAD
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rb0-aL-Ztt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2368.8000000000002" y="791.15442278860576"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Notes" id="Xtp-6j-5Bo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rb0-aL-Ztt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="949"/>
+>>>>>>> master
         </scene>
     </scenes>
 </document>
