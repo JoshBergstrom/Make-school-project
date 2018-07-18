@@ -29,6 +29,10 @@ class HomeScreenViewController: UIViewController {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
+    //IBOutlets home page
+    @IBOutlet weak var searchBar: UITextField!
+    @IBOutlet weak var recentTableView: UITableView!
 }
 
 

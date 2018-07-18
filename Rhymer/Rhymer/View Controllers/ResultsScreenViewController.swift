@@ -13,6 +13,13 @@ class ResultsScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
+    //IBOutlets 
+    @IBOutlet weak var wordSearched: UILabel!
+    @IBOutlet weak var resultsTableView: UITableView!
+    
+    
 }
 
 

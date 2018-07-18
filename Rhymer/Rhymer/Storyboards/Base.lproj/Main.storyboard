@@ -67,6 +67,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="3F2-xD-bxa"/>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="yW9-CQ-fhf"/>
+                    <connections>
+                        <outlet property="recentTableView" destination="Skx-kW-Ew6" id="OzS-sM-2C0"/>
+                        <outlet property="searchBar" destination="brT-dT-6r8" id="c6S-Dd-UcK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWA-Ag-pdj" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="2560.8000000000002" y="116.49175412293854"/>
         </scene>
-        <!--View Controller-->
+        <!--Results Screen View Controller-->
         <scene sceneID="maE-rb-0yS">
             <objects>
-                <viewController id="YWH-82-X2J" sceneMemberID="viewController">
+                <viewController id="YWH-82-X2J" customClass="ResultsScreenViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMx-sN-fSf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,6 +218,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2pO-hA-Y1A"/>
                     </view>
+                    <connections>
+                        <outlet property="resultsTableView" destination="zEA-oV-vXG" id="PTr-QI-aSH"/>
+                        <outlet property="wordSearched" destination="iBK-T9-Jhe" id="YKd-GN-ZEA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khy-Vi-Ujh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
