@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  MakeSchoolNotes
+//  Rhymer
 //
-//  Created by Chris Orcutt on 1/10/16.
-//  Copyright © 2016 MakeSchool. All rights reserved.
+//  Created by Arya Gharib on 7/16/18.
+//  Copyright © 2018 Sina Gharib. All rights reserved.
 //
 
 import UIKit
