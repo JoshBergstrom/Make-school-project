@@ -8,18 +8,52 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
+import Alamofire
 
-class ResultsScreenViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var rhymedWords: [RhymingWord] = []
     
-    
-    //IBOutlets 
+    //IBOutlets
     @IBOutlet weak var wordSearched: UILabel!
     @IBOutlet weak var resultsTableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //TODO
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
+        guard let wordToSearch = wordToSearch else {
+            fatalError("No word has been searched")
+        }
+        wordSearched.text = wordToSearch
+        let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
+        
+        Alamofire.request(apiToContact).validate().responseJSON() { response in
+            switch response.result {
+            case .success:
+                if let value = response.result.value {
+                    let searchURL = NSURL.fileURL(withPath: apiToContact)
+                    let jsonData = try! Data(contentsOf: searchURL)
+                    let wordsData = try! JSON(data: jsonData)
+                    let allWordsData = wordsData.arrayValue
+                    let nextRhymedWord = RhymingWord(json: word, wordIndex: rhymedWords.count)
+                    rhymedWords.append(nextRhymedWord)
+                    cell.
+                    
+                }
+            case.failure(let error):
+                print(error)
+            }
+        }
+        
+    }
     
 }
-
 

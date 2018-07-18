@@ -35,6 +35,7 @@
 		4218321920FD402C00C28CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4218322120FD4C3100C28CBE /* RhymingWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymingWord.swift; sourceTree = "<group>"; };
 		427D639420FE69E100A1516A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableCellView.swift; sourceTree = "<group>"; };
 		A0E2ABC720FFEA9700D55556 /* CustomTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewController.swift; sourceTree = "<group>"; };
 		B4DA518F7DA2F1450D5A02E6 /* Pods_Rhymer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rhymer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FAD51FC9A5624F96BC84A7 /* Pods-Rhymer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rhymer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rhymer/Pods-Rhymer.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 		4218320C20FD402900C28CBE /* Rhymer */ = {
 			isa = PBXGroup;
 			children = (
+				A06E17B920FFFF5C0035B725 /* View */,
 				03E8A5F120FFB4290022482B /* Supporting Files */,
 				03084E0420FEB66F00B5CDB4 /* Storyboards */,
 				03084E0120FEB55500B5CDB4 /* View Controllers */,
@@ -137,6 +139,14 @@
 				E0FAD51FC9A5624F96BC84A7 /* Pods-Rhymer.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A06E17B920FFFF5C0035B725 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F7F706C8A6C0D74F2A1A6CF3 /* Frameworks */ = {
