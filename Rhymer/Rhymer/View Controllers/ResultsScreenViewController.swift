@@ -11,7 +11,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class ResultsScreenViewController: UIViewController {
+class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var rhymedWords: [RhymingWord] = []
 
     //IBOutlets
@@ -24,26 +24,16 @@ class ResultsScreenViewController: UIViewController {
             fatalError("No word has been searched")
         }
         wordSearched.text = wordToSearch
-        let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
-        
-        Alamofire.request(apiToContact).validate().responseJSON() { response in
-            switch response.result {
-            case .success:
-                if let value = response.result.value {
-                    let searchURL = NSURL.fileURL(withPath: apiToContact)
-                    let jsonData = try! Data(contentsOf: searchURL)
-                    let wordsData = try! JSON(data: jsonData)
-                    let allWordsData = wordsData.arrayValue
-                    for word in allWordsData {
-                        let nextRhymedWord = RhymingWord(json: word, wordIndex: self.rhymedWords.count)
-                        self.rhymedWords.append(nextRhymedWord)
-                    }
-                }
-            case .failure(let error):
-                print(error)
-            }
-        }
 
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
+        
     }
     
 }

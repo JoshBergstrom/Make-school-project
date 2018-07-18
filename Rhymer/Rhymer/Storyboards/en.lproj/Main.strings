@@ -1,0 +1,27 @@
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "3F2-xD-bxa"; */
+"3F2-xD-bxa.title" = "Home";
+
+/* Class = "UILabel"; text = "Notes "; ObjectID = "UVT-or-7sY"; */
+"UVT-or-7sY.text" = "Notes ";
+
+/* Class = "UILabel"; text = "Defininition:"; ObjectID = "Wmc-lB-444"; */
+"Wmc-lB-444.text" = "Defininition:";
+
+/* Class = "UITabBarItem"; title = "Notes"; ObjectID = "Xtp-6j-5Bo"; */
+"Xtp-6j-5Bo.title" = "Notes";
+
+/* Class = "UITextField"; text = "Search Rhyme Word"; ObjectID = "brT-dT-6r8"; */
+"brT-dT-6r8.text" = "Search Rhyme Word";
+
+/* Class = "UILabel"; text = "Word Searched"; ObjectID = "iBK-T9-Jhe"; */
+"iBK-T9-Jhe.text" = "Word Searched";
+
+/* Class = "UILabel"; text = "Rhymer"; ObjectID = "idt-z0-tSV"; */
+"idt-z0-tSV.text" = "Rhymer";
+
+/* Class = "UILabel"; text = "Favorites"; ObjectID = "nZH-nB-1ga"; */
+"nZH-nB-1ga.text" = "Favorites";
+
+/* Class = "UILabel"; text = "Word Clicked"; ObjectID = "qL3-Pw-zSX"; */
+"qL3-Pw-zSX.text" = "Word Clicked";
