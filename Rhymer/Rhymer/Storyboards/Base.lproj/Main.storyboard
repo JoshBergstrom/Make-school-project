@@ -35,7 +35,7 @@
                                     <constraint firstItem="idt-z0-tSV" firstAttribute="centerY" secondItem="mFA-JZ-tiJ" secondAttribute="centerY" id="qg1-U1-75m"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search Rhyme Word" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brT-dT-6r8">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search Rhyme Word" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brT-dT-6r8" customClass="SearchBar" customModule="Rhymer" customModuleProvider="target">
                                 <rect key="frame" x="25" y="198" width="325" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Whc-F9-nmM"/>

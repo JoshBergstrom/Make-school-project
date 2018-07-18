@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  SearchBar.swift
 //  Rhymer
 //
 //  Created by Josh Bergstrom on 7/18/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class searchBar: UITextField {
+class SearchBar: UITextField {
     
     var searchButtonPressed: (()-> Void)?
     

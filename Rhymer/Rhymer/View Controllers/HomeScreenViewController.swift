@@ -13,18 +13,19 @@ import Alamofire
 public var wordToSearch: String? = nil
 
 class HomeScreenViewController: UIViewController {
-    
-    var rhymedWords: [RhymingWord] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Constantly update the global variable "wordToSearch" here with the contents of the search bar
+        searchBar.searchButtonPressed = {
+            self.search()
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        wordToSearch = searchBar.text
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -33,7 +34,7 @@ class HomeScreenViewController: UIViewController {
     }
     
     //IBOutlets home page
-    @IBOutlet weak var searchBar: searchBar!
+    @IBOutlet weak var searchBar: SearchBar!
     @IBOutlet weak var recentTableView: UITableView!
     
     //dismiss Keyboard
@@ -41,7 +42,11 @@ class HomeScreenViewController: UIViewController {
         if self.searchBar.isFirstResponder {
             self.searchBar.resignFirstResponder()
         }
+        guard let searchBar = self.searchBar.text else { return }
+        wordToSearch = searchBar
+
     }
+    
 }
 
 
