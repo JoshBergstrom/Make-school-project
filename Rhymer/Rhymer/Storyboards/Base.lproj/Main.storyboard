@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="1454" y="-448"/>
         </scene>
-        <!--Main Tab View Controller-->
+        <!--Custom Tab View Controller-->
         <scene sceneID="SJU-mJ-KbO">
             <objects>
-                <tabBarController id="r9N-gN-tdH" customClass="MainTabViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="r9N-gN-tdH" customClass="CustomTabViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SV7-Tk-DHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
