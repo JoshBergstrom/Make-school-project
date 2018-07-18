@@ -4,3 +4,8 @@ be able to save and share those words.
 
 ## Audience
 
+
+## API
+https://od-api.oxforddictionaries.com/api/v1
+
+### application ID: bbdc0eb3
