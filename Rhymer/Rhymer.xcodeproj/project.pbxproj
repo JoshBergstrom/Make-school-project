@@ -16,6 +16,7 @@
 		4218321820FD402C00C28CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4218321620FD402C00C28CBE /* LaunchScreen.storyboard */; };
 		4218322220FD4C3100C28CBE /* RhymingWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218322120FD4C3100C28CBE /* RhymingWord.swift */; };
 		427D639520FE69E100A1516A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 427D639320FE69E100A1516A /* Model.xcdatamodeld */; };
+		42ED65EC20FFD8CF00000D07 /* ResultsTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED65EB20FFD8CE00000D07 /* ResultsTableCellView.swift */; };
 		7989DB8BA3826185B4BEDC76 /* Pods_Rhymer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DA518F7DA2F1450D5A02E6 /* Pods_Rhymer.framework */; };
 		A0AE057D20FFA65E004333E1 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE057C20FFA65E004333E1 /* MainTabController.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		4218321920FD402C00C28CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4218322120FD4C3100C28CBE /* RhymingWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymingWord.swift; sourceTree = "<group>"; };
 		427D639420FE69E100A1516A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		42ED65EB20FFD8CE00000D07 /* ResultsTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableCellView.swift; sourceTree = "<group>"; };
 		A0AE057C20FFA65E004333E1 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		B4DA518F7DA2F1450D5A02E6 /* Pods_Rhymer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rhymer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FAD51FC9A5624F96BC84A7 /* Pods-Rhymer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rhymer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rhymer/Pods-Rhymer.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		4218320C20FD402900C28CBE /* Rhymer */ = {
 			isa = PBXGroup;
 			children = (
+				42ED65EA20FFC56D00000D07 /* Views */,
 				03084E0420FEB66F00B5CDB4 /* Storyboards */,
 				03084E0120FEB55500B5CDB4 /* View Controllers */,
 				427D638E20FE62A600A1516A /* Models */,
@@ -117,6 +120,14 @@
 				4218322120FD4C3100C28CBE /* RhymingWord.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		42ED65EA20FFC56D00000D07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42ED65EB20FFD8CE00000D07 /* ResultsTableCellView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6303BBB34FE3E034C98D8642 /* Pods */ = {
@@ -257,6 +268,7 @@
 			files = (
 				4218321020FD402900C28CBE /* HomeScreenViewController.swift in Sources */,
 				03084E0320FEB58E00B5CDB4 /* ResultsScreenViewController.swift in Sources */,
+				42ED65EC20FFD8CF00000D07 /* ResultsTableCellView.swift in Sources */,
 				A0AE057D20FFA65E004333E1 /* MainTabController.swift in Sources */,
 				4218320E20FD402900C28CBE /* AppDelegate.swift in Sources */,
 				427D639520FE69E100A1516A /* Model.xcdatamodeld in Sources */,
