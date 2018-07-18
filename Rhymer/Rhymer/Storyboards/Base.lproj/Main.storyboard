@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Home Screen View Controller-->
         <scene sceneID="bgh-us-Vx7">
             <objects>
                 <viewController id="9FD-jg-nUj" customClass="HomeScreenViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFA-JZ-tiJ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rhymer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idt-z0-tSV">
                                         <rect key="frame" x="121" y="-0.5" width="132" height="101.5"/>
@@ -35,17 +35,17 @@
                                     <constraint firstItem="idt-z0-tSV" firstAttribute="centerY" secondItem="mFA-JZ-tiJ" secondAttribute="centerY" id="qg1-U1-75m"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search Rhyme Word" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brT-dT-6r8">
-                                <rect key="frame" x="25" y="198" width="325" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search Rhyme Word" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brT-dT-6r8" customClass="SearchBar" customModule="Rhymer" customModuleProvider="target">
+                                <rect key="frame" x="25" y="242" width="325" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Whc-F9-nmM"/>
                                 </constraints>
                                 <color key="textColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Skx-kW-Ew6">
-                                <rect key="frame" x="25" y="275" width="325" height="266"/>
+                                <rect key="frame" x="25" y="319" width="325" height="222"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
@@ -65,16 +65,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tHI-cj-Iyn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="3F2-xD-bxa"/>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="yW9-CQ-fhf"/>
                     <connections>
                         <outlet property="recentTableView" destination="Skx-kW-Ew6" id="OzS-sM-2C0"/>
                         <outlet property="searchBar" destination="brT-dT-6r8" id="c6S-Dd-UcK"/>
+                        <segue destination="YWH-82-X2J" kind="show" identifier="wordSearch" id="5eO-md-IT3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWA-Ag-pdj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="-448"/>
+            <point key="canvasLocation" x="1604" y="-448.42578710644682"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SEh-WE-PWv">
@@ -85,11 +85,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgR-KT-g3B">
-                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Clicked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL3-Pw-zSX">
-                                        <rect key="frame" x="101" y="32" width="172" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="100.5" y="32" width="175.5" height="37"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -102,7 +102,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defininition:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmc-lB-444">
-                                <rect key="frame" x="25" y="135" width="325" height="407"/>
+                                <rect key="frame" x="25" y="179" width="325" height="314"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -110,7 +110,7 @@
                                 <color key="highlightedColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsZ-7n-QIH">
-                                <rect key="frame" x="25" y="567" width="325" height="50"/>
+                                <rect key="frame" x="25" y="518" width="325" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="sqM-nw-p1Z"/>
                                 </constraints>
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exl-7K-nO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215" y="-448"/>
+            <point key="canvasLocation" x="3152.8000000000002" y="-448.42578710644682"/>
         </scene>
         <!--Results Screen View Controller-->
         <scene sceneID="maE-rb-0yS">
@@ -148,14 +148,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puV-7L-OgQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EUX-Gw-foB">
-                                        <rect key="frame" x="88" y="32" width="198" height="36"/>
+                                        <rect key="frame" x="88" y="32" width="199" height="37"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Searched" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBK-T9-Jhe">
-                                                <rect key="frame" x="0.0" y="0.0" width="198" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Searched" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBK-T9-Jhe">
+                                                <rect key="frame" x="0.0" y="0.0" width="199" height="37"/>
+                                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -170,8 +170,9 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zEA-oV-vXG">
-                                <rect key="frame" x="0.0" y="128" width="375" height="477"/>
+                                <rect key="frame" x="0.0" y="172" width="375" height="421"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<<<<<<< HEAD
                                 <constraints>
                                     <constraint firstAttribute="height" constant="477" id="EhX-3u-Oi1"/>
                                 </constraints>
@@ -203,6 +204,8 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+=======
+>>>>>>> master
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -211,7 +214,7 @@
                             <constraint firstItem="puV-7L-OgQ" firstAttribute="top" secondItem="2pO-hA-Y1A" secondAttribute="top" id="URF-Oy-FNn"/>
                             <constraint firstItem="puV-7L-OgQ" firstAttribute="trailing" secondItem="2pO-hA-Y1A" secondAttribute="trailing" id="eNW-OP-Bz6"/>
                             <constraint firstItem="zEA-oV-vXG" firstAttribute="leading" secondItem="2pO-hA-Y1A" secondAttribute="leading" id="eYJ-Ne-8T7"/>
-                            <constraint firstItem="2pO-hA-Y1A" firstAttribute="bottom" secondItem="zEA-oV-vXG" secondAttribute="bottom" constant="62" id="glj-hW-dPy"/>
+                            <constraint firstItem="2pO-hA-Y1A" firstAttribute="bottom" secondItem="zEA-oV-vXG" secondAttribute="bottom" constant="25" id="glj-hW-dPy"/>
                             <constraint firstItem="zEA-oV-vXG" firstAttribute="top" secondItem="puV-7L-OgQ" secondAttribute="bottom" constant="8" id="mXm-H4-msM"/>
                             <constraint firstItem="zEA-oV-vXG" firstAttribute="trailing" secondItem="2pO-hA-Y1A" secondAttribute="trailing" id="vDb-5m-uK6"/>
                         </constraints>
@@ -220,16 +223,17 @@
                     <connections>
                         <outlet property="resultsTableView" destination="zEA-oV-vXG" id="PTr-QI-aSH"/>
                         <outlet property="wordSearched" destination="iBK-T9-Jhe" id="YKd-GN-ZEA"/>
+                        <segue destination="CpO-Lr-Day" kind="show" identifier="wordDefinition" id="WWu-Qs-UmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khy-Vi-Ujh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="-448"/>
+            <point key="canvasLocation" x="2358" y="-448"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab View Controller-->
         <scene sceneID="SJU-mJ-KbO">
             <objects>
-                <tabBarController id="r9N-gN-tdH" sceneMemberID="viewController">
+                <tabBarController id="r9N-gN-tdH" customClass="CustomTabViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SV7-Tk-DHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -237,7 +241,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="TDQ-LL-Laa" kind="relationship" relationship="viewControllers" id="bZo-Pa-7en"/>
-                        <segue destination="9FD-jg-nUj" kind="relationship" relationship="viewControllers" id="0d5-Ks-hub"/>
+                        <segue destination="rkn-GZ-si9" kind="relationship" relationship="viewControllers" id="0d5-Ks-hub"/>
                         <segue destination="DfQ-wL-heI" kind="relationship" relationship="viewControllers" id="gNV-Hy-L6z"/>
                     </connections>
                 </tabBarController>
@@ -257,8 +261,8 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZH-nB-1ga">
-                                        <rect key="frame" x="129" y="32" width="117" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="129" y="32" width="117" height="37"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -305,8 +309,8 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVT-or-7sY">
-                                        <rect key="frame" x="145" y="32" width="84" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="146.5" y="32" width="83" height="37"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -340,6 +344,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rb0-aL-Ztt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="665" y="949"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="1TC-XO-T1Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rkn-GZ-si9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="3F2-xD-bxa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qu5-33-i9T">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9FD-jg-nUj" kind="relationship" relationship="rootViewController" id="HHW-C9-fc0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVf-Sz-6Wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="-448.42578710644682"/>
         </scene>
     </scenes>
 </document>

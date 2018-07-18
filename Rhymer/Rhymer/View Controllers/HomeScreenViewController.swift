@@ -13,16 +13,19 @@ import Alamofire
 public var wordToSearch: String? = nil
 
 class HomeScreenViewController: UIViewController {
-    
-    var rhymedWords: [RhymingWord] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Constantly update the global variable "wordToSearch" here with the contents of the search bar
+        searchBar.searchButtonPressed = {
+            self.search()
+        }
     }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -31,39 +34,19 @@ class HomeScreenViewController: UIViewController {
     }
     
     //IBOutlets home page
-    @IBOutlet weak var searchBar: UITextField!
+    @IBOutlet weak var searchBar: SearchBar!
     @IBOutlet weak var recentTableView: UITableView!
+    
+    //dismiss Keyboard
+    func search () {
+        if self.searchBar.isFirstResponder {
+            self.searchBar.resignFirstResponder()
+        }
+        guard let searchBar = self.searchBar.text else { return }
+        wordToSearch = searchBar
+
+    }
+    
 }
 
-
-
-// In the @IBAction for the "Rhyme!" button, do the following code:
-//
-//let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
-//
-//Alamofire.request(apiToContact).validate().responseJSON() { response in
-//    switch response.result {
-//    case .success:
-//        if let value = response.result.value {
-//            let searchURL = NSURL.fileURL(withPath: apiToContact)
-//            let jsonData = try! Data(contentsOf: searchURL)
-//            let wordsData = try! JSON(data: jsonData)
-//            let allWordsData = wordsData.arrayValue
-//            for word in allWordsData {
-//                let nextRhymedWord = RhymingWord(json: word, wordIndex: rhymedWords.count)
-//                rhymedWords.append(nextRhymedWord)
-//            }
-//
-//            //Set the correspomding UIElements to the attributes of RhymingWord()
-//            self.movieTitleLabel.text = movie.name
-//            self.rightsOwnerLabel.text = movie.rightsOwner
-//            self.releaseDateLabel.text = movie.releaseDate
-//            self.priceLabel.text = movie.price
-//            self.loadPoster(urlString: movie.imageLink)
-//
-//        }
-//    case .failure(let error):
-//        print(error)
-//    }
-//}
 

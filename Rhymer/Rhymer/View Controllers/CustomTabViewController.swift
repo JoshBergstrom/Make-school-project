@@ -1,5 +1,5 @@
 //
-//  MainTabController.swift
+//  CustomTabViewController.swift
 //  Rhymer
 //
 //  Created by Anna Grace on 7/18/18.
@@ -9,9 +9,11 @@
 import Foundation
 import UIKit
 
-class MainTabController: UITabBarController {
+class CustomTabViewController: UITabBarController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.selectedIndex = 1;
     }
 }
