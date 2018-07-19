@@ -12,7 +12,7 @@ import Alamofire
 
 public var wordToSearch: String? = nil
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +41,35 @@ class HomeScreenViewController: UIViewController {
     func search () {
         if self.searchBar.isFirstResponder {
             self.searchBar.resignFirstResponder()
+           
         }
         guard let searchBar = self.searchBar.text else { return }
         wordToSearch = searchBar
 
     }
     
- 
+
+    
+    
+    
+    
+    // dont touch
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+            
+        case "wordSearched":
+        //1
+            let destination = segue.destination as! ResultsScreenViewController
+            
+        default:
+            print("error")
+        }
+    }
+    
+    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
+        
+    }
+    
 }
-
-

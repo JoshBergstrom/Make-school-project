@@ -70,7 +70,7 @@
                     <connections>
                         <outlet property="recentTableView" destination="Skx-kW-Ew6" id="OzS-sM-2C0"/>
                         <outlet property="searchBar" destination="brT-dT-6r8" id="c6S-Dd-UcK"/>
-                        <segue destination="YWH-82-X2J" kind="show" identifier="wordSearch" id="5eO-md-IT3"/>
+                        <segue destination="YWH-82-X2J" kind="show" identifier="wordSearch" id="xPd-co-2mj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWA-Ag-pdj" sceneMemberID="firstResponder"/>
@@ -140,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="3152.8000000000002" y="-448.42578710644682"/>
         </scene>
-        <!--Results Screen View Controller-->
+        <!--Item-->
         <scene sceneID="maE-rb-0yS">
             <objects>
                 <viewController id="YWH-82-X2J" customClass="ResultsScreenViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
@@ -244,6 +244,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2pO-hA-Y1A"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Bue-DW-KcF"/>
                     <connections>
                         <outlet property="resultsTableView" destination="zEA-oV-vXG" id="IhE-P8-sFD"/>
                         <outlet property="wordSearched" destination="iBK-T9-Jhe" id="YKd-GN-ZEA"/>
@@ -252,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khy-Vi-Ujh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2357.5999999999999" y="-448.42578710644682"/>
+            <point key="canvasLocation" x="2369" y="-448"/>
         </scene>
         <!--Custom Tab View Controller-->
         <scene sceneID="SJU-mJ-KbO">
