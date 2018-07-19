@@ -232,6 +232,7 @@
                                         <connections>
                                             <outlet property="numberOfSyllables" destination="0dE-Zg-Txs" id="g2R-pF-gIY"/>
                                             <outlet property="wordLabel" destination="pZF-J5-19y" id="FJV-Js-pB4"/>
+                                            <segue destination="CpO-Lr-Day" kind="show" identifier="definition" id="uCw-dk-7gh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -253,7 +254,6 @@
                     <connections>
                         <outlet property="resultsTableView" destination="zEA-oV-vXG" id="IhE-P8-sFD"/>
                         <outlet property="wordSearched" destination="iBK-T9-Jhe" id="YKd-GN-ZEA"/>
-                        <segue destination="CpO-Lr-Day" kind="show" identifier="wordDefinition" id="WWu-Qs-UmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khy-Vi-Ujh" userLabel="First Responder" sceneMemberID="firstResponder"/>
