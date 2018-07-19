@@ -187,27 +187,31 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of Syllables:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viE-TG-e9F">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5cy-Se-1CR">
+                                                    <rect key="frame" x="325" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="5my-rl-ldS"/>
+                                                        <constraint firstAttribute="width" constant="40" id="dmK-ep-L7t"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Syllables:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viE-TG-e9F">
                                                     <rect key="frame" x="185" y="16" width="99" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dE-Zg-Txs">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dE-Zg-Txs">
                                                     <rect key="frame" x="289" y="16" width="26" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Har-z5-QcC">
-                                                    <rect key="frame" x="334" y="13" width="24" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="btn_heart_black_outline"/>
-                                                    <state key="selected" image="btn_heart_red_solid"/>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="viE-TG-e9F" firstAttribute="top" secondItem="dDY-pw-PJS" secondAttribute="topMargin" constant="5" id="4ms-oI-B3T"/>
+                                                <constraint firstAttribute="bottom" secondItem="5cy-Se-1CR" secondAttribute="bottom" constant="5" id="7Yv-6A-Fb0"/>
+                                                <constraint firstItem="5cy-Se-1CR" firstAttribute="top" secondItem="dDY-pw-PJS" secondAttribute="top" constant="5" id="EXz-ZF-KYO"/>
+                                                <constraint firstItem="5cy-Se-1CR" firstAttribute="leading" secondItem="0dE-Zg-Txs" secondAttribute="trailing" constant="10" id="Eg7-r5-KaQ"/>
                                                 <constraint firstItem="pZF-J5-19y" firstAttribute="top" secondItem="dDY-pw-PJS" secondAttribute="topMargin" constant="5" id="En6-PM-kEA"/>
                                                 <constraint firstItem="0dE-Zg-Txs" firstAttribute="top" secondItem="dDY-pw-PJS" secondAttribute="topMargin" constant="5" id="IHE-2v-FLJ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="0dE-Zg-Txs" secondAttribute="bottom" constant="5" id="PZK-2N-XLi"/>
@@ -216,9 +220,11 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="viE-TG-e9F" secondAttribute="bottom" constant="5" id="bml-EH-ZlC"/>
                                                 <constraint firstItem="0dE-Zg-Txs" firstAttribute="leading" secondItem="viE-TG-e9F" secondAttribute="trailing" constant="5" id="cvy-wI-X9Q"/>
                                                 <constraint firstItem="pZF-J5-19y" firstAttribute="leading" secondItem="dDY-pw-PJS" secondAttribute="leadingMargin" constant="10" id="eCs-RT-Arx"/>
+                                                <constraint firstAttribute="trailing" secondItem="5cy-Se-1CR" secondAttribute="trailing" constant="10" id="gMQ-iC-wr9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="likedImage" destination="5cy-Se-1CR" id="D2F-BX-W6F"/>
                                             <outlet property="numberOfSyllables" destination="0dE-Zg-Txs" id="g2R-pF-gIY"/>
                                             <outlet property="wordLabel" destination="pZF-J5-19y" id="FJV-Js-pB4"/>
                                         </connections>
@@ -295,52 +301,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C75-pJ-jVh">
                                 <rect key="frame" x="0.0" y="145" width="375" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kN4-Px-yye">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kN4-Px-yye" id="Qvv-ye-Zb1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6I-kv-ueI">
-                                                    <rect key="frame" x="15" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53z-Lp-N8S">
-                                                    <rect key="frame" x="310" y="9" width="36" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="btn_heart_black_outline"/>
-                                                    <state key="selected" image="btn_heart_red_solid"/>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Syllables:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COG-Nn-nCV">
-                                                    <rect key="frame" x="158" y="18" width="101" height="12"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p70-ra-A7K">
-                                                    <rect key="frame" x="267" y="14" width="27" height="19"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4F-8g-GLT">
-                                                    <rect key="frame" x="65" y="14" width="40" height="15"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -359,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uO6-ht-BBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664.79999999999995" y="223.53823088455775"/>
+            <point key="canvasLocation" x="665" y="224"/>
         </scene>
         <!--Notes-->
         <scene sceneID="Csy-R7-KiE">
@@ -429,8 +389,4 @@
             <point key="canvasLocation" x="664.79999999999995" y="-448.42578710644682"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="btn_heart_black_outline" width="24" height="24"/>
-        <image name="btn_heart_red_solid" width="24" height="24"/>
-    </resources>
 </document>

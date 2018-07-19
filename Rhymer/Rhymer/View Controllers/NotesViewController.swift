@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NotesViewController: UIViewController{
+class NotesViewController: UITabBarController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
