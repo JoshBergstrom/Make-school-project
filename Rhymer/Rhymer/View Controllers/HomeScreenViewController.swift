@@ -45,31 +45,16 @@ class HomeScreenViewController: UIViewController, UITextFieldDelegate {
         }
         guard let searchBar = self.searchBar.text else { return }
         wordToSearch = searchBar
-
-    }
-    
-
-    
-    
-    
-    
-    // dont touch
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let identifier = segue.identifier else { return }
-        
-        switch identifier {
-            
-        case "wordSearched":
-        //1
-            let destination = segue.destination as! ResultsScreenViewController
-            
-        default:
-            print("error")
-        }
+        performSegue(withIdentifier: "wordSearch", sender: nil)
     }
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
         
     }
+    
+    @IBAction func EnterButtonClicked(_ sender: Any) {
+        search()
+    }
+    
     
 }
