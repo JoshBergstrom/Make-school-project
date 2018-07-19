@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
-class ResultsTableCellView: UITableViewCell {
-    @
+
+class ResultsTableCellView: UITableViewCell{
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var likedImage: UIImageView!
+    @IBOutlet weak var numberOfSyllables: UILabel!
+
 }

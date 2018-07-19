@@ -28,7 +28,7 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableView
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
             fatalError("No word has been searched")
         }

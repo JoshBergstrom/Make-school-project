@@ -13,7 +13,8 @@ class CustomTabViewController: UITabBarController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //initial tab is home (1)
         self.selectedIndex = 1;
+        
     }
 }
