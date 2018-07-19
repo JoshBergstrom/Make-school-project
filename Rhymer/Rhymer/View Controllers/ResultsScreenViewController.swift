@@ -24,7 +24,6 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     @IBAction func SearchBarEnterButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
     }
     
     
