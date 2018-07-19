@@ -29,7 +29,4 @@ class SearchBar: UITextField {
     @objc private func searchButtonTapped(_ sender: UIBarButtonItem) {
         searchButtonPressed?()
     }
-    
-    
-    
 }

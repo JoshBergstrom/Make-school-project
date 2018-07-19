@@ -23,10 +23,6 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         
     }
     
-    @IBAction func SearchBarEnterButtonPressed(_ sender: Any) {
-    }
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
@@ -34,7 +30,7 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         }
         wordSearched.text = wordToSearch
         let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
-  
+        
         Alamofire.request(apiToContact).validate().responseJSON() { response in
             switch response.result {
             case .success:
@@ -52,20 +48,14 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
             case .failure(let error):
                 print(error)
             }
+            return cell
         }
-        return cell
     }
- 
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rhymedWords.count
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let identifier = segue.identifier,
-            let destination = segue.destination as? HomeScreenViewController
-            else { return }
-    }
 }
-
 
