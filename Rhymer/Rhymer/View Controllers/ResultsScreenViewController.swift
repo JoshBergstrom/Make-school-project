@@ -23,9 +23,9 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+ //   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //TODO
-    }
+  //  }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
@@ -43,8 +43,9 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
                     let jsonData = try! Data(contentsOf: searchURL)
                     let wordsData = try! JSON(data: jsonData)
                     let allWordsData = wordsData.arrayValue
-                    let nextRhymedWord = RhymingWord(json: Word, wordIndex: rhymedWords.count)
-                    rhymedWords.append(nextRhymedWord)
+                    let word = allWordsData[self.rhymedWords.count - 1]
+                    let nextRhymedWord = RhymingWord(json: word, wordIndex: self.rhymedWords.count)
+                    self.rhymedWords.append(nextRhymedWord)
                     cell
                     
                 }
