@@ -1,4 +1,3 @@
-//
 //  ResultsScreenViewController.swift
 //  Rhymer
 //
@@ -60,5 +59,3 @@ class ResultsScreenViewController: UITableViewController {
         return cell
     }
 }
-
-
