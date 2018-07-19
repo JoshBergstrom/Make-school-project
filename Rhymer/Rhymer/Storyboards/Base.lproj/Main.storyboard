@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1604" y="-448.42578710644682"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition Screen View Controller-->
         <scene sceneID="SEh-WE-PWv">
             <objects>
-                <viewController id="CpO-Lr-Day" sceneMemberID="viewController">
+                <viewController id="CpO-Lr-Day" customClass="DefinitionScreenViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Zo-RG-K1p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
