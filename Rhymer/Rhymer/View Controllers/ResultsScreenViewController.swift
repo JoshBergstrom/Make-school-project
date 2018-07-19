@@ -48,8 +48,8 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
             case .failure(let error):
                 print(error)
             }
-            return cell
         }
+        return cell
     }
     
     
