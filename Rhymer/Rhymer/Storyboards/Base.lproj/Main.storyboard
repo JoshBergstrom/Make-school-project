@@ -143,7 +143,7 @@
         <scene sceneID="maE-rb-0yS">
             <objects>
                 <viewController id="YWH-82-X2J" customClass="ResultsScreenViewController" customModule="Rhymer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wMx-sN-fSf">
+                    <view key="view" contentMode="scaleToFill" id="wMx-sN-fSf" customClass="ResultsTableCellView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -187,7 +187,7 @@
                         <viewLayoutGuide key="safeArea" id="2pO-hA-Y1A"/>
                     </view>
                     <connections>
-                        <outlet property="resultsTableView" destination="zEA-oV-vXG" id="PTr-QI-aSH"/>
+                        <outlet property="resultsTableView" destination="zEA-oV-vXG" id="IhE-P8-sFD"/>
                         <outlet property="wordSearched" destination="iBK-T9-Jhe" id="YKd-GN-ZEA"/>
                         <segue destination="CpO-Lr-Day" kind="show" identifier="wordDefinition" id="WWu-Qs-UmB"/>
                     </connections>
