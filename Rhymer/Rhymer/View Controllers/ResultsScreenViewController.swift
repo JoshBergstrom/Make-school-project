@@ -1,4 +1,3 @@
-//
 //  ResultsScreenViewController.swift
 //  Rhymer
 //
@@ -11,7 +10,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ResultsScreenViewController: UITableViewController {
     var rhymedWords: [RhymingWord] = []
     
     //IBOutlets
@@ -20,15 +19,23 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rhymedWords.count
+    }
+    
+    override func tableView(_ tableView: UITableView!, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
             fatalError("No word has been searched")
         }
         wordSearched.text = wordToSearch
+        print(wordToSearch)
         let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
         
         Alamofire.request(apiToContact).validate().responseJSON() { response in
@@ -45,17 +52,10 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
                     cell.wordLabel.text = nextRhymedWord.word
                     cell.numberOfSyllables.text = String(nextRhymedWord.numOfSyllables)
                 }
-            case .failure(let error):
+            case.failure(let error):
                 print(error)
             }
         }
         return cell
     }
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rhymedWords.count
-    }
-    
 }
-
