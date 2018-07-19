@@ -23,10 +23,6 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         
     }
     
- //   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO
-  //  }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
@@ -46,14 +42,19 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
                     let word = allWordsData[self.rhymedWords.count - 1]
                     let nextRhymedWord = RhymingWord(json: word, wordIndex: self.rhymedWords.count)
                     self.rhymedWords.append(nextRhymedWord)
-                    cell
-                    
+                    cell.wordLabel.text = nextRhymedWord.word
+                    cell.numberOfSyllables.text = String(nextRhymedWord.numOfSyllables)
                 }
-            case.failure(let error):
+            case .failure(let error):
                 print(error)
             }
+            return cell
         }
-        
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rhymedWords.count
     }
     
 }
