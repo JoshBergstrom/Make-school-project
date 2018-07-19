@@ -21,14 +21,6 @@
 		4218322220FD4C3100C28CBE /* RhymingWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218322120FD4C3100C28CBE /* RhymingWord.swift */; };
 		427D639520FE69E100A1516A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 427D639320FE69E100A1516A /* Model.xcdatamodeld */; };
 		7989DB8BA3826185B4BEDC76 /* Pods_Rhymer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DA518F7DA2F1450D5A02E6 /* Pods_Rhymer.framework */; };
-		A06E17C821005B5E0035B725 /* btn_heart_red_solid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A06E17BF21005B5E0035B725 /* btn_heart_red_solid@2x.png */; };
-		A06E17C921005B5E0035B725 /* btn_heart_red_solid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A06E17C021005B5E0035B725 /* btn_heart_red_solid@3x.png */; };
-		A06E17CA21005B5E0035B725 /* btn_heart_red_solid.png in Resources */ = {isa = PBXBuildFile; fileRef = A06E17C121005B5E0035B725 /* btn_heart_red_solid.png */; };
-		A06E17CB21005B5E0035B725 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = A06E17C221005B5E0035B725 /* Contents.json */; };
-		A06E17CC21005B5E0035B725 /* btn_heart_black_outline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A06E17C421005B5E0035B725 /* btn_heart_black_outline@2x.png */; };
-		A06E17CD21005B5E0035B725 /* btn_heart_black_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = A06E17C521005B5E0035B725 /* btn_heart_black_outline.png */; };
-		A06E17CE21005B5E0035B725 /* btn_heart_black_outline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A06E17C621005B5E0035B725 /* btn_heart_black_outline@3x.png */; };
-		A06E17CF21005B5E0035B725 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = A06E17C721005B5E0035B725 /* Contents.json */; };
 		A06E17D021005CB70035B725 /* ResultsTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */; };
 		A0E2ABC820FFEA9700D55556 /* CustomTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2ABC720FFEA9700D55556 /* CustomTabViewController.swift */; };
 /* End PBXBuildFile section */
@@ -51,14 +43,6 @@
 		4218322120FD4C3100C28CBE /* RhymingWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymingWord.swift; sourceTree = "<group>"; };
 		427D639420FE69E100A1516A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableCellView.swift; sourceTree = "<group>"; };
-		A06E17BF21005B5E0035B725 /* btn_heart_red_solid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_heart_red_solid@2x.png"; sourceTree = "<group>"; };
-		A06E17C021005B5E0035B725 /* btn_heart_red_solid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_heart_red_solid@3x.png"; sourceTree = "<group>"; };
-		A06E17C121005B5E0035B725 /* btn_heart_red_solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_heart_red_solid.png; sourceTree = "<group>"; };
-		A06E17C221005B5E0035B725 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
-		A06E17C421005B5E0035B725 /* btn_heart_black_outline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_heart_black_outline@2x.png"; sourceTree = "<group>"; };
-		A06E17C521005B5E0035B725 /* btn_heart_black_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_heart_black_outline.png; sourceTree = "<group>"; };
-		A06E17C621005B5E0035B725 /* btn_heart_black_outline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_heart_black_outline@3x.png"; sourceTree = "<group>"; };
-		A06E17C721005B5E0035B725 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		A0E2ABC720FFEA9700D55556 /* CustomTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewController.swift; sourceTree = "<group>"; };
 		B4DA518F7DA2F1450D5A02E6 /* Pods_Rhymer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rhymer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FAD51FC9A5624F96BC84A7 /* Pods-Rhymer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rhymer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rhymer/Pods-Rhymer.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,7 +129,6 @@
 				4218320D20FD402900C28CBE /* AppDelegate.swift */,
 				4218321420FD402C00C28CBE /* Assets.xcassets */,
 				4218321920FD402C00C28CBE /* Info.plist */,
-				A06E17BD21005B240035B725 /* Images */,
 			);
 			path = Rhymer;
 			sourceTree = "<group>";
@@ -174,39 +157,6 @@
 				A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A06E17BD21005B240035B725 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				A06E17C321005B5E0035B725 /* heart_black */,
-				A06E17BE21005B5E0035B725 /* heart_red */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		A06E17BE21005B5E0035B725 /* heart_red */ = {
-			isa = PBXGroup;
-			children = (
-				A06E17BF21005B5E0035B725 /* btn_heart_red_solid@2x.png */,
-				A06E17C021005B5E0035B725 /* btn_heart_red_solid@3x.png */,
-				A06E17C121005B5E0035B725 /* btn_heart_red_solid.png */,
-				A06E17C221005B5E0035B725 /* Contents.json */,
-			);
-			name = heart_red;
-			path = ../../../../../../Downloads/Icons/heart_red;
-			sourceTree = "<group>";
-		};
-		A06E17C321005B5E0035B725 /* heart_black */ = {
-			isa = PBXGroup;
-			children = (
-				A06E17C421005B5E0035B725 /* btn_heart_black_outline@2x.png */,
-				A06E17C521005B5E0035B725 /* btn_heart_black_outline.png */,
-				A06E17C621005B5E0035B725 /* btn_heart_black_outline@3x.png */,
-				A06E17C721005B5E0035B725 /* Contents.json */,
-			);
-			name = heart_black;
-			path = ../../../../../../Downloads/Icons/heart_black;
 			sourceTree = "<group>";
 		};
 		F7F706C8A6C0D74F2A1A6CF3 /* Frameworks */ = {
@@ -286,16 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4218321820FD402C00C28CBE /* LaunchScreen.storyboard in Resources */,
-				A06E17CA21005B5E0035B725 /* btn_heart_red_solid.png in Resources */,
-				A06E17CE21005B5E0035B725 /* btn_heart_black_outline@3x.png in Resources */,
 				033C8F7820FED35C0086564D /* Main.storyboard in Resources */,
-				A06E17C821005B5E0035B725 /* btn_heart_red_solid@2x.png in Resources */,
-				A06E17C921005B5E0035B725 /* btn_heart_red_solid@3x.png in Resources */,
-				A06E17CC21005B5E0035B725 /* btn_heart_black_outline@2x.png in Resources */,
 				4218321520FD402C00C28CBE /* Assets.xcassets in Resources */,
-				A06E17CB21005B5E0035B725 /* Contents.json in Resources */,
-				A06E17CF21005B5E0035B725 /* Contents.json in Resources */,
-				A06E17CD21005B5E0035B725 /* btn_heart_black_outline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
