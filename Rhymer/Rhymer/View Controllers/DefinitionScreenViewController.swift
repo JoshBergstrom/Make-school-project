@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DefinitionScreenViewController: UITabBarController{
+class DefinitionScreenViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()

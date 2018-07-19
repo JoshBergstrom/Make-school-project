@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FavoriteScreenViewController : UITabBarController{
+class FavoriteScreenViewController : UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
