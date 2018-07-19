@@ -23,6 +23,11 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         
     }
     
+    @IBAction func SearchBarEnterButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
