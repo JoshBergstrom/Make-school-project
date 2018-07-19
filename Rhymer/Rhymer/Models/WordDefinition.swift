@@ -19,7 +19,7 @@ struct WordDefinition {
     let url: URL
     var request: URLRequest
     
-    init(wordToDefine word: String, viewController view: UIViewController) {
+    init(wordToDefine word: String, label: UILabel) {
         self.word = word
         self.word_id = word.lowercased()
         self.url = URL(string: "https://od-api.oxforddictionaries.com:443/api/v1/entries/\(language)/\(word_id)")!
@@ -34,15 +34,19 @@ struct WordDefinition {
                 let data = data,
                 let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
                 if let dictionary = jsonData as? [String: Any]{
-                    if let def = dictionary["results"] as? String {
-                        
+                    if let def = dictionary["results"] as? [String: Any] {
+                        if let nestDef = def["lexicalEntries"] as? [String: Any] {
+                            if let nestDef2 = nestDef["entries"] as? [String: Any] {
+                                if let actualDef = nestDef2["entries"] as? String {
+                                    label.text = "Definition: \(actualDef)"
+                                }
+                            }
+                        }
                     }
                 }
-                print(response)
-                print(jsonData)
             } else {
-                print(error)
-                print(NSString.init(data: data!, encoding: String.Encoding.utf8.rawValue))
+                print(error!)
+                print(NSString.init(data: data!, encoding: String.Encoding.utf8.rawValue)!)
             }
         }).resume()
     }
