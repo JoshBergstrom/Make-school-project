@@ -269,6 +269,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YWH-82-X2J" id="EbT-7G-y6i"/>
+                                    <outlet property="delegate" destination="YWH-82-X2J" id="ley-hj-oLB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

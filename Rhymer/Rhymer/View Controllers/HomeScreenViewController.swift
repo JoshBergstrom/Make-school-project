@@ -59,6 +59,13 @@ class HomeScreenViewController: UIViewController, UITextFieldDelegate, UITableVi
         performSegue(withIdentifier: "wordSearch", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "wordSearch"{
+            let resultVC = segue.destination as! ResultsScreenViewController
+            resultVC.word = searchBar.text
+        }
+    }
+    
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
         
     }

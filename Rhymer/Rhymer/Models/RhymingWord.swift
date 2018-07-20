@@ -10,14 +10,14 @@ import Foundation
 import SwiftyJSON
 
 
-struct RhymingWord {
+struct RhymingWord : Decodable{
     let word: String
-    let numOfSyllables: Int
-    let usageScore: Int
+    let numSyllables: Int
+    let score: Int?
     
-    init(json: JSON, wordIndex index: Int) {
-        self.word = json[index]["word"].stringValue
-        self.numOfSyllables = json[index]["numSyllables"].intValue
-        self.usageScore = json[index]["numSyllables"].intValue
-    }
+//    init(json: JSON, wordIndex index: Int) {
+//        self.word = json[index]["word"].stringValue
+//        self.numOfSyllables = json[index]["numSyllables"].intValue
+//        self.usageScore = json[index]["numSyllables"].intValue
+//    }
 }

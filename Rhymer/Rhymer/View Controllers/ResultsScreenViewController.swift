@@ -12,7 +12,14 @@ import SwiftyJSON
 import Alamofire
 
 class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var rhymedWords: [RhymingWord] = []
+    var rhymedWords: [RhymingWord] = []{
+        didSet{
+            DispatchQueue.main.async {
+                 self.resultsTableView.reloadData()
+            }
+           
+        }
+    }
 //    let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
 //
 //    Alamofire.request(apiToContact).validate().responseJSON() { response in
@@ -37,7 +44,7 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
     //IBOutlets
     @IBOutlet weak var wordSearched: UILabel!
     @IBOutlet weak var resultsTableView: UITableView!
-    
+    var word: String?
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -46,13 +53,19 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        RhymService.getRhym(word: word!) { (rhymword) in
+            self.rhymedWords = rhymword
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
-        guard let wordToSearch = wordToSearch else {
-            fatalError("No word has been searched")
-        }
-        wordSearched.text = wordToSearch
-        print(wordToSearch)
+      let word = rhymedWords[indexPath.row]
+       cell.wordLabel.text = word.word
+        cell.numberOfSyllables = word.numSyllables
         return cell
     }
     
@@ -60,6 +73,30 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rhymedWords.count
     }
-}
     
+}
+
+
+struct RhymService{
+    
+    static func getRhym(word: String, callback:@escaping (([RhymingWord]) -> Void)){
+        
+        let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(word)"
+        let url = URL(string: apiToContact)
+        let session = URLSession.shared
+        let task = session.dataTask(with: url!) { (data, response, error) in
+        
+            guard let data = data else {return}
+            
+            let rw = try! JSONDecoder().decode([RhymingWord].self, from: data)
+            callback(rw)
+        }
+        task.resume()
+        
+    }
+}
+
+
+
+
 
