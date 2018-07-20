@@ -30,7 +30,7 @@ class ResultsScreenViewController: UITableViewController {
         return rhymedWords.count
     }
     
-    override func tableView(_ tableView: UITableView!, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: (UITableView!), cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
             fatalError("No word has been searched")
@@ -59,6 +59,7 @@ class ResultsScreenViewController: UITableViewController {
         }
         return cell
     }
+    
 }
 
 
