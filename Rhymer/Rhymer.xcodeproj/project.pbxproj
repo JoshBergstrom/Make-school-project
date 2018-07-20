@@ -10,6 +10,7 @@
 		03084E0320FEB58E00B5CDB4 /* ResultsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084E0220FEB58E00B5CDB4 /* ResultsScreenViewController.swift */; };
 		033C8F7820FED35C0086564D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033C8F7620FED35C0086564D /* Main.storyboard */; };
 		03E8A5F320FFB45C0022482B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8A5F220FFB45C0022482B /* SearchBar.swift */; };
+		06668BC82102514100F372E3 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06668BC72102514100F372E3 /* NotesTableViewCell.swift */; };
 		06C9E89F2100F72B00FC68AA /* DefinitionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C9E89E2100F72B00FC68AA /* DefinitionScreenViewController.swift */; };
 		06C9E8A12100FCE300FC68AA /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C9E8A02100FCE300FC68AA /* FavoriteScreenViewController.swift */; };
 		06C9E8A32100FD4800FC68AA /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C9E8A22100FD4800FC68AA /* NotesViewController.swift */; };
@@ -32,6 +33,7 @@
 		03084E0220FEB58E00B5CDB4 /* ResultsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsScreenViewController.swift; sourceTree = "<group>"; };
 		033C8F7720FED35C0086564D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03E8A5F220FFB45C0022482B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		06668BC72102514100F372E3 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		06C9E89E2100F72B00FC68AA /* DefinitionScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionScreenViewController.swift; sourceTree = "<group>"; };
 		06C9E8A02100FCE300FC68AA /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenViewController.swift; sourceTree = "<group>"; };
 		06C9E8A22100FD4800FC68AA /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +165,11 @@
 			children = (
 				A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */,
 				425E53D321024FB200D9C25B /* FavoritesTableViewCell.swift */,
+<<<<<<< HEAD
 				425E53D52102527F00D9C25B /* RecentsTableViewCell.swift */,
+=======
+				06668BC72102514100F372E3 /* NotesTableViewCell.swift */,
+>>>>>>> e111f5e5be5473896898b33ca3a33a6415194487
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				425E53D62102527F00D9C25B /* RecentsTableViewCell.swift in Sources */,
 				4218321020FD402900C28CBE /* HomeScreenViewController.swift in Sources */,
 				A0E2ABC820FFEA9700D55556 /* CustomTabViewController.swift in Sources */,
+				06668BC82102514100F372E3 /* NotesTableViewCell.swift in Sources */,
 				03084E0320FEB58E00B5CDB4 /* ResultsScreenViewController.swift in Sources */,
 				4218320E20FD402900C28CBE /* AppDelegate.swift in Sources */,
 				427D639520FE69E100A1516A /* Model.xcdatamodeld in Sources */,
