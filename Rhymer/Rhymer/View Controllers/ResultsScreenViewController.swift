@@ -11,7 +11,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class ResultsScreenViewController: UITableViewController {
+class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var rhymedWords: [RhymingWord] = []
     //IBOutlets
     @IBOutlet weak var wordSearched: UILabel!
@@ -25,11 +25,11 @@ class ResultsScreenViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rhymedWords.count
     }
     
-    override func tableView(_ tableView: (UITableView!), cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: (UITableView!), cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
             fatalError("No word has been searched")

@@ -9,7 +9,15 @@
 import Foundation
 import UIKit
 
-class FavoriteScreenViewController : UITabBarController{
+class FavoriteScreenViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

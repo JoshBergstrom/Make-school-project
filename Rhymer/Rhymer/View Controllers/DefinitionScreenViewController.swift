@@ -9,16 +9,15 @@
 import Foundation
 import UIKit
 
-class DefinitionScreenViewController: UITabBarController{
+class DefinitionScreenViewController: UIViewController {
     //@IBOutlets
     @IBOutlet weak var wordTapped: UILabel!
     @IBOutlet weak var definitionText: UILabel!
     @IBOutlet weak var noteText: UITextField!
     
-  //  let wordDef = WordDefinition(wordToDefine: wordToSearch!, label: self.definitionText)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let wordDef = WordDefinition(wordToDefine: wordToSearch!, label: self.definitionText)
 
 
     }
