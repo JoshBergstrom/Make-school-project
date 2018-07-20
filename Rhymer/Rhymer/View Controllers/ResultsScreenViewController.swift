@@ -66,6 +66,7 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
       let word = rhymedWords[indexPath.row]
        cell.wordLabel.text = word.word
         cell.numberOfSyllables.text = String(word.numSyllables)
+        wordToSearch = word.word
         return cell
     }
     
