@@ -15,11 +15,9 @@ class DefinitionScreenViewController: UITabBarController{
     @IBOutlet weak var definitionText: UILabel!
     @IBOutlet weak var noteText: UITextField!
     
-  //  let wordDef = WordDefinition(wordToDefine: wordToSearch!, label: self.definitionText)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let wordDef = WordDefinition(wordToDefine: wordToSearch!, label: self.definitionText)
 
     }
     
