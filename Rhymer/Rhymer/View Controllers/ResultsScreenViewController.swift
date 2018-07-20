@@ -65,7 +65,7 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
       let word = rhymedWords[indexPath.row]
        cell.wordLabel.text = word.word
-        cell.numberOfSyllables = word.numSyllables
+        cell.numberOfSyllables.text = String(word.numSyllables)
         return cell
     }
     
