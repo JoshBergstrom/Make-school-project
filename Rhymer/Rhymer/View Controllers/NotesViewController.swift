@@ -10,14 +10,12 @@ import Foundation
 import UIKit
 
 class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    @IBOutlet weak var notesTableView: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        <#code#>
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = notesTableView.dequeueReusableCell(withIdentifier: "notesCell") as! NotesTableViewCell
-      return cell
+        <#code#>
     }
     
     
