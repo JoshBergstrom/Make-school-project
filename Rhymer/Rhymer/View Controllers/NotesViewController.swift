@@ -13,5 +13,5 @@ class NotesViewController: UITabBarController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-}
+    }
 }
