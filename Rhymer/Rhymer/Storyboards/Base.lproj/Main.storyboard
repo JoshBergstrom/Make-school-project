@@ -38,6 +38,7 @@
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rhyme a word..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brT-dT-6r8" customClass="SearchBar" customModule="Rhymer" customModuleProvider="target">
                                 <rect key="frame" x="25" y="242" width="325" height="45"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Whc-F9-nmM"/>
                                 </constraints>
@@ -50,8 +51,8 @@
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Skx-kW-Ew6">
                                 <rect key="frame" x="25" y="319" width="325" height="222"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="separatorColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.75294117647058822" green="0.83137254901960778" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" rowHeight="50" id="xgN-pI-w6d" customClass="HomeTableViewCell" customModule="Rhymer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="325" height="50"/>
@@ -81,6 +82,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="tcI-0E-V0m" secondAttribute="bottom" constant="5" id="s7X-3i-H5x"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="favButton" destination="Sbe-Ax-Bnt" id="8mX-2y-QJh"/>
                                             <outlet property="wordLastSearched" destination="tcI-0E-V0m" id="XCV-sV-dS6"/>
@@ -89,7 +91,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tHI-cj-Iyn" firstAttribute="trailing" secondItem="Skx-kW-Ew6" secondAttribute="trailing" constant="25" id="Alp-bd-uQd"/>
                             <constraint firstItem="tHI-cj-Iyn" firstAttribute="trailing" secondItem="brT-dT-6r8" secondAttribute="trailing" constant="25" id="CBT-8g-e5b"/>
@@ -142,7 +144,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defininition:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmc-lB-444">
                                 <rect key="frame" x="25" y="179" width="325" height="314"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.75294117647058822" green="0.83137254901960778" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -150,6 +152,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a note..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsZ-7n-QIH">
                                 <rect key="frame" x="25" y="518" width="325" height="50"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="sqM-nw-p1Z"/>
                                 </constraints>
@@ -158,7 +161,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="85Y-CP-Uhf" firstAttribute="bottom" secondItem="qsZ-7n-QIH" secondAttribute="bottom" constant="50" id="6Bt-9a-NnW"/>
                             <constraint firstItem="Wmc-lB-444" firstAttribute="top" secondItem="fgR-KT-g3B" secondAttribute="bottom" constant="15" id="6Qy-fy-vrt"/>
@@ -215,7 +218,8 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zEA-oV-vXG">
                                 <rect key="frame" x="0.0" y="172" width="375" height="421"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.75294117647058822" green="0.83137254901960778" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rhymeResultsCell" rowHeight="75" id="Q76-Zn-Qkd" customClass="ResultsTableCellView" customModule="Rhymer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
@@ -261,6 +265,7 @@
                                                 <constraint firstItem="pZF-J5-19y" firstAttribute="leading" secondItem="dDY-pw-PJS" secondAttribute="leadingMargin" id="utB-iq-E7A"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="likeButton" destination="4Xt-dI-vhK" id="JZp-kb-T75"/>
                                             <outlet property="numberOfSyllables" destination="0dE-Zg-Txs" id="g2R-pF-gIY"/>
@@ -275,7 +280,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="puV-7L-OgQ" firstAttribute="leading" secondItem="2pO-hA-Y1A" secondAttribute="leading" id="61l-O5-Ykx"/>
                             <constraint firstItem="puV-7L-OgQ" firstAttribute="top" secondItem="2pO-hA-Y1A" secondAttribute="top" id="URF-Oy-FNn"/>
@@ -343,7 +348,9 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C75-pJ-jVh">
                                 <rect key="frame" x="0.0" y="145" width="375" height="448"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoritesCell" rowHeight="75" id="enc-Z4-Wrh" customClass="FavoritesTableViewCell" customModule="Rhymer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
@@ -390,6 +397,7 @@
                                                 <constraint firstItem="psA-6E-cYP" firstAttribute="top" secondItem="LO4-7o-o6J" secondAttribute="topMargin" constant="12" id="xm8-V8-8LL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="favButton" destination="psA-6E-cYP" id="gZN-De-PId"/>
                                             <outlet property="numberOfSyllablesLabel" destination="j8h-zK-lbh" id="VhI-p8-x9z"/>
@@ -398,9 +406,13 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="TDQ-LL-Laa" id="q6F-5l-Qwp"/>
+                                    <outlet property="delegate" destination="TDQ-LL-Laa" id="hDz-QZ-w14"/>
+                                </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="C75-pJ-jVh" firstAttribute="trailing" secondItem="GbW-ue-ue6" secondAttribute="trailing" id="5Ok-dh-wNX"/>
                             <constraint firstItem="GbW-ue-ue6" firstAttribute="bottom" secondItem="C75-pJ-jVh" secondAttribute="bottom" constant="25" id="B9E-ry-qvE"/>
@@ -448,7 +460,9 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2aY-Nz-leC">
                                 <rect key="frame" x="0.0" y="145" width="375" height="448"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notesCell" rowHeight="75" id="qov-by-Ixj" customClass="NoteTableViewCell" customModule="Rhymer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
@@ -495,6 +509,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="qJL-Vt-dCD" secondAttribute="bottom" constant="9.5" id="yuJ-0w-hMZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.75294117650000003" green="0.83137254900000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="likeButton" destination="0rF-fD-MYY" id="pym-sp-Eb4"/>
                                             <outlet property="noteTitle" destination="TXt-s3-BBX" id="zrk-kN-dv8"/>
@@ -509,7 +524,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Z8h-Io-xJu" firstAttribute="leading" secondItem="LRi-0Y-scE" secondAttribute="leading" id="Aa5-ar-PZ1"/>
                             <constraint firstItem="LRi-0Y-scE" firstAttribute="bottom" secondItem="2aY-Nz-leC" secondAttribute="bottom" constant="25" id="Feh-WJ-frT"/>

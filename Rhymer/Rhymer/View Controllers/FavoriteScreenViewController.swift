@@ -13,11 +13,14 @@ class FavoriteScreenViewController : UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var favoritesTableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = favoritesTableView.dequeueReusableCell(withIdentifier: "favoritesCell") as! FavoritesTableViewCell
+        cell.wordAndWordSearched.text = "Coming soon!"
+        cell.numberOfSyllablesLabel.text = ""
+        cell.numberSyllabled.text = ""
         return cell
     }
     
