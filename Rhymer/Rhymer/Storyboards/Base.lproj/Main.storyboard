@@ -503,6 +503,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DfQ-wL-heI" id="I29-sN-Ust"/>
+                                    <outlet property="delegate" destination="DfQ-wL-heI" id="Dzl-st-sQO"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
