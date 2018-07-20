@@ -103,8 +103,6 @@
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="yW9-CQ-fhf"/>
                     <connections>
                         <outlet property="homeTableView" destination="Skx-kW-Ew6" id="okS-Zu-t4O"/>
-                        <outlet property="notesTableview" destination="Skx-kW-Ew6" id="Jax-XQ-lmF"/>
-                        <outlet property="recentTableView" destination="Skx-kW-Ew6" id="OzS-sM-2C0"/>
                         <outlet property="searchBar" destination="brT-dT-6r8" id="c6S-Dd-UcK"/>
                         <segue destination="YWH-82-X2J" kind="show" identifier="wordSearch" id="xPd-co-2mj"/>
                     </connections>
@@ -215,7 +213,7 @@
                                 <rect key="frame" x="0.0" y="172" width="375" height="421"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rhymeResultsCell" rowHeight="75" id="Q76-Zn-Qkd" customClass="ResultsTableCellView">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rhymeResultsCell" rowHeight="75" id="Q76-Zn-Qkd" customClass="ResultsTableCellView" customModule="Rhymer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q76-Zn-Qkd" id="dDY-pw-PJS">
@@ -260,6 +258,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="likeButton" destination="4Xt-dI-vhK" id="JZp-kb-T75"/>
                                             <outlet property="numberOfSyllables" destination="0dE-Zg-Txs" id="g2R-pF-gIY"/>
                                             <outlet property="wordLabel" destination="pZF-J5-19y" id="FJV-Js-pB4"/>
                                             <segue destination="CpO-Lr-Day" kind="show" identifier="definition" id="uCw-dk-7gh"/>

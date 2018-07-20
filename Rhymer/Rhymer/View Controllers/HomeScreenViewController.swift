@@ -22,7 +22,7 @@ class HomeScreenViewController: UIViewController, UITextFieldDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = homeTableView.dequeueReusableCell(withIdentifier: "homeCell") as! HomeTableViewCell
-    
+        return cell
 }
 
     override func viewDidLoad() {

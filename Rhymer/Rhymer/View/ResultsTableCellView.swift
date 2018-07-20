@@ -12,7 +12,7 @@ import UIKit
 
 class ResultsTableCellView: UITableViewCell{
     @IBOutlet weak var wordLabel: UILabel!
-    @IBOutlet weak var likedImage: UIImageView!
     @IBOutlet weak var numberOfSyllables: UILabel!
-
+    @IBOutlet weak var likeButton: UIButton!
+    
 }

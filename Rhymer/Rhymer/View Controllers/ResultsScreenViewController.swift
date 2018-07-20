@@ -26,11 +26,7 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         super.didReceiveMemoryWarning()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rhymedWords.count
-    }
-    
-    func tableView(_ tableView: (UITableView!), cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rhymeResultsCell") as! ResultsTableCellView
         guard let wordToSearch = wordToSearch else {
             fatalError("No word has been searched")
@@ -47,7 +43,7 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
                     let jsonData = try! Data(contentsOf: searchURL)
                     let wordsData = try! JSON(data: jsonData)
                     let allWordsData = wordsData.arrayValue
-                    let word = allWordsData[self.rhymedWords.count - 1]
+                    let word = allWordsData[self.rhymedWords.count]
                     let nextRhymedWord = RhymingWord(json: word, wordIndex: self.rhymedWords.count)
                     self.rhymedWords.append(nextRhymedWord)
                     cell.wordLabel.text = nextRhymedWord.word
@@ -59,6 +55,11 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         }
         return cell
     }
-        }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rhymedWords.count
+    }
+}
     
 
