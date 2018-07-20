@@ -11,8 +11,8 @@ import UIKit
 
 class LikedButton: UIButton {
     
-    if LikedButton  {
     
     }
+    // if liked button clicked then fill heart and send full heart into Favorites page
     
-}
+

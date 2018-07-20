@@ -13,7 +13,6 @@ import Alamofire
 
 class ResultsScreenViewController: UITableViewController {
     var rhymedWords: [RhymingWord] = []
-    
     //IBOutlets
     @IBOutlet weak var wordSearched: UILabel!
     @IBOutlet weak var resultsTableView: UITableView!
@@ -58,6 +57,8 @@ class ResultsScreenViewController: UITableViewController {
             }
         }
         return cell
+    }
+        }
     }
     
 }
