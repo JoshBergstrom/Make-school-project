@@ -81,6 +81,10 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="tcI-0E-V0m" secondAttribute="bottom" constant="5" id="s7X-3i-H5x"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="favButton" destination="Sbe-Ax-Bnt" id="8mX-2y-QJh"/>
+                                            <outlet property="wordLastSearched" destination="tcI-0E-V0m" id="XCV-sV-dS6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -382,6 +386,12 @@
                                                 <constraint firstItem="psA-6E-cYP" firstAttribute="top" secondItem="LO4-7o-o6J" secondAttribute="topMargin" constant="12" id="xm8-V8-8LL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="favButton" destination="psA-6E-cYP" id="gZN-De-PId"/>
+                                            <outlet property="numberOfSyllablesLabel" destination="j8h-zK-lbh" id="VhI-p8-x9z"/>
+                                            <outlet property="numberSyllabled" destination="46p-LD-tkK" id="exa-5Z-dkG"/>
+                                            <outlet property="wordAndWordSearched" destination="aap-zI-blL" id="ALj-iu-1aE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

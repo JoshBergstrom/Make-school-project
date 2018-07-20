@@ -9,7 +9,10 @@
 import UIKit
 
 class FavoritesTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var wordAndWordSearched: UILabel!
+    @IBOutlet weak var numberSyllabled: UILabel!
+    @IBOutlet weak var numberOfSyllablesLabel: UILabel!
+    @IBOutlet weak var favButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
