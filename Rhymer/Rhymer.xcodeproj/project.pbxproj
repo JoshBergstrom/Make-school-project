@@ -20,6 +20,7 @@
 		4218321820FD402C00C28CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4218321620FD402C00C28CBE /* LaunchScreen.storyboard */; };
 		4218322220FD4C3100C28CBE /* RhymingWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218322120FD4C3100C28CBE /* RhymingWord.swift */; };
 		425E53D421024FB200D9C25B /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E53D321024FB200D9C25B /* FavoritesTableViewCell.swift */; };
+		425E53D62102527F00D9C25B /* RecentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E53D52102527F00D9C25B /* RecentsTableViewCell.swift */; };
 		427D639520FE69E100A1516A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 427D639320FE69E100A1516A /* Model.xcdatamodeld */; };
 		42AE72C42100FBB8007E9D66 /* WordDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AE72C32100FBB8007E9D66 /* WordDefinition.swift */; };
 		7989DB8BA3826185B4BEDC76 /* Pods_Rhymer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DA518F7DA2F1450D5A02E6 /* Pods_Rhymer.framework */; };
@@ -44,6 +45,7 @@
 		4218321920FD402C00C28CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4218322120FD4C3100C28CBE /* RhymingWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymingWord.swift; sourceTree = "<group>"; };
 		425E53D321024FB200D9C25B /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		425E53D52102527F00D9C25B /* RecentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsTableViewCell.swift; sourceTree = "<group>"; };
 		427D639420FE69E100A1516A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		42AE72C32100FBB8007E9D66 /* WordDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDefinition.swift; sourceTree = "<group>"; };
 		A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableCellView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				A06E17BC20FFFF710035B725 /* ResultsTableCellView.swift */,
 				425E53D321024FB200D9C25B /* FavoritesTableViewCell.swift */,
+				425E53D52102527F00D9C25B /* RecentsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425E53D62102527F00D9C25B /* RecentsTableViewCell.swift in Sources */,
 				4218321020FD402900C28CBE /* HomeScreenViewController.swift in Sources */,
 				A0E2ABC820FFEA9700D55556 /* CustomTabViewController.swift in Sources */,
 				03084E0320FEB58E00B5CDB4 /* ResultsScreenViewController.swift in Sources */,
