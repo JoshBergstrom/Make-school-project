@@ -280,7 +280,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Bue-DW-KcF"/>
                     <connections>
-                        <outlet property="heartButton0" destination="4Xt-dI-vhK" id="sVe-04-18P"/>
                         <outlet property="resultsTableView" destination="zEA-oV-vXG" id="IhE-P8-sFD"/>
                         <outlet property="wordSearched" destination="iBK-T9-Jhe" id="YKd-GN-ZEA"/>
                     </connections>

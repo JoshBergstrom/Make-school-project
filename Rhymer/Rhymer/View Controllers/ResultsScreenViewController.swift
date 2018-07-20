@@ -59,8 +59,5 @@ class ResultsScreenViewController: UITableViewController {
         return cell
     }
         }
-    }
     
-}
-
 
