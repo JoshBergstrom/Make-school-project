@@ -67,7 +67,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-Ax-Bnt">
-                                                    <rect key="frame" x="286" y="13" width="24" height="21"/>
+                                                    <rect key="frame" x="286" y="0.0" width="24" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="WZC-9F-8Xg"/>
+                                                    </constraints>
                                                     <state key="normal" image="btn_heart_black_outline"/>
                                                     <state key="selected" image="btn_heart_red_solid"/>
                                                 </button>
@@ -75,12 +78,10 @@
                                             <constraints>
                                                 <constraint firstItem="tcI-0E-V0m" firstAttribute="top" secondItem="dgt-nx-sp4" secondAttribute="topMargin" constant="5" id="0ZO-5d-yQ4"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Sbe-Ax-Bnt" secondAttribute="trailing" id="BPg-Ba-jgt"/>
+                                                <constraint firstItem="Sbe-Ax-Bnt" firstAttribute="bottom" secondItem="tcI-0E-V0m" secondAttribute="bottom" id="E1Z-N0-gVO"/>
                                                 <constraint firstItem="tcI-0E-V0m" firstAttribute="leading" secondItem="dgt-nx-sp4" secondAttribute="leadingMargin" id="Epc-J1-1wZ"/>
-                                                <constraint firstItem="Sbe-Ax-Bnt" firstAttribute="top" secondItem="dgt-nx-sp4" secondAttribute="topMargin" constant="5" id="FbH-Vy-5TO"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Sbe-Ax-Bnt" secondAttribute="bottom" constant="2" id="QwX-2y-gFf"/>
-                                                <constraint firstItem="Sbe-Ax-Bnt" firstAttribute="top" secondItem="dgt-nx-sp4" secondAttribute="topMargin" constant="2" id="egb-n9-Xbr"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Sbe-Ax-Bnt" secondAttribute="bottom" constant="5" id="lPi-y8-WhY"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="tcI-0E-V0m" secondAttribute="bottom" constant="5" id="s7X-3i-H5x"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tcI-0E-V0m" secondAttribute="bottom" constant="5" id="jMz-XX-7Qc"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tcI-0E-V0m" secondAttribute="trailingMargin" id="tEi-l7-aAU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
