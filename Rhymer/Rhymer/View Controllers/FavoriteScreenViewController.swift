@@ -10,12 +10,15 @@ import Foundation
 import UIKit
 
 class FavoriteScreenViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var favoritesTableView: UITableView!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = favoritesTableView.dequeueReusableCell(withIdentifier: "favoritesCell") as! FavoritesTableViewCell
+        return cell
     }
     
     

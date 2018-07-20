@@ -336,7 +336,7 @@
                                 <rect key="frame" x="0.0" y="145" width="375" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="enc-Z4-Wrh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoritesCell" rowHeight="75" id="enc-Z4-Wrh" customClass="FavoritesTableViewCell" customModule="Rhymer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="enc-Z4-Wrh" id="LO4-7o-o6J">
@@ -398,6 +398,9 @@
                         <viewLayoutGuide key="safeArea" id="GbW-ue-ue6"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="VTp-6b-jK8"/>
+                    <connections>
+                        <outlet property="favoritesTableView" destination="C75-pJ-jVh" id="05s-Cq-wQU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uO6-ht-BBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

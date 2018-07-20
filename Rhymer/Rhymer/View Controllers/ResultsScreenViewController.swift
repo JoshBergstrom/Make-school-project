@@ -13,6 +13,7 @@ import Alamofire
 
 class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var rhymedWords: [RhymingWord] = []
+    
     //IBOutlets
     @IBOutlet weak var wordSearched: UILabel!
     @IBOutlet weak var resultsTableView: UITableView!
