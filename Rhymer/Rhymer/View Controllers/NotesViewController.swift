@@ -19,6 +19,9 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = notesTableView.dequeueReusableCell(withIdentifier: "notesCell") as! NoteTableViewCell
+        cell.noteTitle.text = "Coming soon!"
+        cell.numOfSyll.text = ""
+        cell.numSyllableLable.text = ""
         return cell
     }
     

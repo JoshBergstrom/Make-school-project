@@ -481,6 +481,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="qJL-Vt-dCD" secondAttribute="bottom" constant="9.5" id="yuJ-0w-hMZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likeButton" destination="0rF-fD-MYY" id="pym-sp-Eb4"/>
+                                            <outlet property="noteTitle" destination="TXt-s3-BBX" id="zrk-kN-dv8"/>
+                                            <outlet property="numOfSyll" destination="VuK-vu-NCE" id="Vh2-ds-WTw"/>
+                                            <outlet property="numSyllableLable" destination="qJL-Vt-dCD" id="Hgu-7T-XBu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

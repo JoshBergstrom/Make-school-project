@@ -13,6 +13,26 @@ import Alamofire
 
 class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var rhymedWords: [RhymingWord] = []
+//    let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
+//
+//    Alamofire.request(apiToContact).validate().responseJSON() { response in
+//    switch response.result {
+//    case .success:
+//    if let value = response.result.value {
+//    let searchURL = NSURL.fileURL(withPath: apiToContact)
+//    let jsonData = try! Data(contentsOf: searchURL)
+//    let wordsData = try! JSON(data: jsonData)
+//    let allWordsData = wordsData.arrayValue
+//    let word = allWordsData[self.rhymedWords.count]
+//    let nextRhymedWord = RhymingWord(json: word, wordIndex: self.rhymedWords.count)
+//    self.rhymedWords.append(nextRhymedWord)
+//    cell.wordLabel.text = nextRhymedWord.word
+//    cell.numberOfSyllables.text = String(nextRhymedWord.numOfSyllables)
+//    }
+//    case.failure(let error):
+//    print(error)
+//    }
+//    }
     
     //IBOutlets
     @IBOutlet weak var wordSearched: UILabel!
@@ -33,26 +53,6 @@ class ResultsScreenViewController: UIViewController, UITableViewDelegate, UITabl
         }
         wordSearched.text = wordToSearch
         print(wordToSearch)
-        let apiToContact = "https://api.datamuse.com/words?rel_rhy=\(wordToSearch)"
-        
-        Alamofire.request(apiToContact).validate().responseJSON() { response in
-            switch response.result {
-            case .success:
-                if let value = response.result.value {
-                    let searchURL = NSURL.fileURL(withPath: apiToContact)
-                    let jsonData = try! Data(contentsOf: searchURL)
-                    let wordsData = try! JSON(data: jsonData)
-                    let allWordsData = wordsData.arrayValue
-                    let word = allWordsData[self.rhymedWords.count]
-                    let nextRhymedWord = RhymingWord(json: word, wordIndex: self.rhymedWords.count)
-                    self.rhymedWords.append(nextRhymedWord)
-                    cell.wordLabel.text = nextRhymedWord.word
-                    cell.numberOfSyllables.text = String(nextRhymedWord.numOfSyllables)
-                }
-            case.failure(let error):
-                print(error)
-            }
-        }
         return cell
     }
     

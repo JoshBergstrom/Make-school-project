@@ -9,7 +9,12 @@
 import UIKit
 
 class NoteTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var noteTitle: UILabel!
+    @IBOutlet weak var numSyllableLable: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var numOfSyll: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
