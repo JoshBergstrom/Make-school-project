@@ -13,16 +13,12 @@ import Alamofire
 public var wordToSearch: String? = nil
 
 class HomeScreenViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var recentsTableView: UITableView!
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        <#code#>
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = recentsTableView.dequeueReusableCell(withIdentifier: "recentsTableViewCell") as! RecentsTableViewCell
-        return cell
+        <#code#>
     }
     
 

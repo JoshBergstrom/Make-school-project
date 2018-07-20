@@ -53,7 +53,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recentsTableViewCell" rowHeight="50" id="xgN-pI-w6d" customClass="RecentsTableViewCell" customModule="Rhymer" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="xgN-pI-w6d">
                                         <rect key="frame" x="0.0" y="28" width="325" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xgN-pI-w6d" id="dgt-nx-sp4">
@@ -102,7 +102,7 @@
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="yW9-CQ-fhf"/>
                     <connections>
-                        <outlet property="recentsTableView" destination="Skx-kW-Ew6" id="eux-nW-G1w"/>
+                        <outlet property="recentTableView" destination="Skx-kW-Ew6" id="OzS-sM-2C0"/>
                         <outlet property="searchBar" destination="brT-dT-6r8" id="c6S-Dd-UcK"/>
                         <segue destination="YWH-82-X2J" kind="show" identifier="wordSearch" id="xPd-co-2mj"/>
                     </connections>
